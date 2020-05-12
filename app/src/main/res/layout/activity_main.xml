@@ -4,45 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:gravity="center">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="存储内部数据"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="saveInterFile"
-        />
+        <com.ysq.testdemo.view.TestViewGroup
+            android:id="@+id/group_ll"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:background="@color/colorAccent"
+            >
 
 
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="读取内部数据"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:onClick="readInterFile"
-    android:layout_marginTop="20dp"
-    />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_default_750x180"
+            android:scaleType="fitXY"
+            />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="保存外部数据"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="outPrivateFile"
-        android:layout_marginTop="20dp"
-        />
+        <com.ysq.testdemo.view.TestView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="哈哈哈哈哈哈"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_shape"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:text="王蛋蛋的芭比"
+            android:textColor="#000"
+            android:textSize="26px"
+            android:visibility="gone"/>
+
+        </com.ysq.testdemo.view.TestViewGroup>
 
 
 

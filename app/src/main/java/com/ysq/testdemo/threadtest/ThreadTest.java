@@ -2,6 +2,8 @@ package com.ysq.testdemo.threadtest;
 
 import android.util.Log;
 
+import com.ysq.testdemo.throwabletest.ThrowableTest;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -38,5 +40,25 @@ public class ThreadTest {
                 Log.i("threadLocal", mThreadLocal.get() +" = " + Thread.currentThread().getName());
             }
         }.start();
+    }
+
+
+    public void testThrowable(){
+        ThrowableTest testException1 = new ThrowableTest();
+        try {
+            testException1.testEx();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        testException1.testThrowRuntimeException();
+        int a = 6;
+        int b = 0;
+        try { // try监控区域
+
+            if (b == 0) throw new ArithmeticException(); // 通过throw语句抛出异常
+            System.out.println("a/b的值是：" + a / b);
+        }catch (ArithmeticException e){
+            System.out.println(e.getMessage());
+        }
     }
 }
