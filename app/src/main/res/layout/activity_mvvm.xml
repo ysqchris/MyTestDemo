@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MvvmDataBinding">
+
+        <variable
+            name="imagesBean"
+            type="com.ysq.testdemo.mvvm.ImageBean.ImagesBean" />
+
+        <variable
+            name="onlyLiveData"
+            type="String" />
+
+        <variable
+            name="observerBean"
+            type="com.ysq.testdemo.mvvm.DataBindingObserverBean" />
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            url="@{imagesBean.BASE_URL + imagesBean.getUrl()}"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_previous"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="上一张" />
+
+            <Button
+                android:id="@+id/btn_load"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="加载" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下一张" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单独使用LiveData设置数据:  "
+                android:textColor="@color/colorAccent"
+                />
+
+            <TextView
+                android:id="@+id/txt_only_live"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{onlyLiveData}"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定Databing的数据:  "
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/txt_obsever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{observerBean.mObservableField}"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

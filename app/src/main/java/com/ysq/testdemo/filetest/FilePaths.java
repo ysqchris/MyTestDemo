@@ -23,7 +23,7 @@ public class FilePaths {
 
     public void testFilePath(Context pContext){
         /**
-         * 内部存储 getFilesDir  /data/data/包名/files
+         * 内部存储 getFilesDir  /data/user/包名/files
          * 用户不可见 ，外部不可访问
          */
         File interFilePath  =  pContext.getFilesDir();
@@ -32,7 +32,7 @@ public class FilePaths {
         // openFileInput  直接读取文件
 
         /**
-         * 内部缓存目录 /data/data/包名/cache
+         * 内部缓存目录 /data/user/包名/cache
          * 用户不可见，外部不可访问
          */
         File interCachePath =  pContext.getCacheDir();
@@ -47,14 +47,15 @@ public class FilePaths {
          * Environment.DIRECTORY_PICTURES 图片等
          * 也可以直接传 null
          */
-        File externalFilePath =  pContext.getExternalFilesDir(null);
-        Log.e("TAG", "外部私有: " + externalFilePath.getAbsolutePath());
+        File externalPrivateFilePath =  pContext.getExternalFilesDir(null);
+        Log.e("TAG", "外部私有文件目录: " + externalPrivateFilePath.getAbsolutePath());
 
         /**
          * 外部私有缓存目录 /storage/emulated/0/Android/data/包名/cache
          */
-        File externalCachePath =  pContext.getExternalCacheDir();
-        Log.e("TAG", "externalCachePath: " + externalCachePath.getAbsolutePath());
+        File externalPrivateCachePath =  pContext.getExternalCacheDir();
+        Log.e("TAG", "外部私有缓存目录: " + externalPrivateCachePath.getAbsolutePath());
+
 
         /**
          * 外部公共目录 /storage/emulated/0/Pictures
@@ -64,13 +65,13 @@ public class FilePaths {
          * 也可以直接传 null
          */
         File externalPublicPath =  Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES);
-        Log.e("TAG", "externalPublicPath: " + externalPublicPath.getAbsolutePath());
+        Log.e("TAG", "外部公共目录: " + externalPublicPath.getAbsolutePath());
 
         /**
          * 外部公共目录 根目录 /storage/emulated/0
          */
         File externalRootPath =  Environment.getExternalStorageDirectory();
-        Log.e("TAG", "externalRootPath: " + externalRootPath.getAbsolutePath());
+        Log.e("TAG", "外部根目录: " + externalRootPath.getAbsolutePath());
     }
 
 
