@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 
-
+// 添加构建
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
