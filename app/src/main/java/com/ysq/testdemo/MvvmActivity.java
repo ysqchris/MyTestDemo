@@ -32,7 +32,7 @@ import com.ysq.testdemo.mvvm.ImageViewModel;
  * <p>
  * 作 者：Yusq
  * <p>
- * 简 述：
+ * 简 述：测试提交
  */
 
 public class MvvmActivity  extends AppCompatActivity implements View.OnClickListener {
