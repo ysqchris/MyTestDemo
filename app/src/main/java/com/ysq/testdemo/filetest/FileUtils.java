@@ -52,6 +52,11 @@ public class FileUtils {
     }
 
 
+    /**
+     * hah aa 
+     * @param v
+     * @param pContext
+     */
     public void readInterFile(View v , Context pContext){
         String FILENAME = "hello_file";
         FileInputStream fos = null;
