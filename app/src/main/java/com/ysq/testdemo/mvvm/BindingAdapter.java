@@ -13,12 +13,12 @@ import com.bumptech.glide.Glide;
  * <p>
  * 类 名：BindingAdapter
  * <p>
- * 作 者：Yusq
+ * 作 者：Yusq 
  * <p>
  * 简 述：
  */
 public class BindingAdapter {
-
+ // 增加一个测试提交 
     @androidx.databinding.BindingAdapter("url")
     public static void setImageUrl(ImageView imageView, String url) {
         Glide.with(imageView.getContext())
