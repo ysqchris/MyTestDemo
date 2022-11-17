@@ -18,7 +18,7 @@ import com.bumptech.glide.Glide;
  * 简 述：
  */
 public class BindingAdapter {
- // 增加一个测试提交  再提交一次 提交更新变更
+ // 增加一个测试提交  再提交一次 提交更新变更 尽快尽快京东方
     @androidx.databinding.BindingAdapter("url")
     public static void setImageUrl(ImageView imageView, String url) {
         Glide.with(imageView.getContext())
