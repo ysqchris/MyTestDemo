@@ -19,6 +19,7 @@ import com.bumptech.glide.Glide;
  */
 public class BindingAdapter {
 
+    // 测试分支合并
     @androidx.databinding.BindingAdapter("url")
     public static void setImageUrl(ImageView imageView, String url) {
         Glide.with(imageView.getContext())
