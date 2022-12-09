@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextSetImage.addTagToTextView(this, (TextView) findViewById(R.id.tv3), getString(R.string.span_text) , " ");
         getWindow();
-        //new RxJavaTest().testRxjava();
+        //new RxJavaTest().testRxjava();  测试提交
 
        // new FilePaths().testFilePath(this);
 
