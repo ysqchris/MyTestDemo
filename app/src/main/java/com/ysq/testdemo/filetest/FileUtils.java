@@ -1,5 +1,7 @@
 package com.ysq.testdemo.filetest;
 
+import static com.ysq.testdemo.test.Cat.TAG;
+
 import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
@@ -54,6 +56,11 @@ public class FileUtils {
     }
 
 
+    /**
+     * hah aa 
+     * @param v
+     * @param pContext
+     */
     public void readInterFile(View v , Context pContext){
         String FILENAME = "hello_file";
         FileInputStream fos = null;
@@ -73,6 +80,7 @@ public class FileUtils {
             pE.printStackTrace();
         }
         Log.e("TAG", "str2: = " + str2);
+        Log.e(TAG, "readInterFile: "+ str2 );
     }
 
 
