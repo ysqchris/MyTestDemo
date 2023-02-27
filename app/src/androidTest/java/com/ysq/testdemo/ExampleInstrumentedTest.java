@@ -27,5 +27,6 @@ public class ExampleInstrumentedTest {
 
         //assertEquals("com.ysq.testdemo", appContext.getPackageName());
         // 提交代码，查看构建情况
+        // 居然没有提交
     }
 }
