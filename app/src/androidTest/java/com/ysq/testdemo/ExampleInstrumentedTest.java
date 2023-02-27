@@ -26,5 +26,6 @@ public class ExampleInstrumentedTest {
         Instrumentation appContext = InstrumentationRegistry.getInstrumentation();
 
         //assertEquals("com.ysq.testdemo", appContext.getPackageName());
+        // 提交代码，查看构建情况
     }
 }
