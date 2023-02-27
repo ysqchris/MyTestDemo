@@ -6,6 +6,7 @@ pipeline {
          steps {
             script{
                 echo "111111"
+                echo "这是一个运行步骤"
             }
          }
       }
