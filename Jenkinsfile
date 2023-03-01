@@ -5,7 +5,7 @@ pipeline {
       stage('Hello') {
          steps {
             script{
-                echo "111111"
+                echo "111111 HOEW-58--"
             }
          }
       }
