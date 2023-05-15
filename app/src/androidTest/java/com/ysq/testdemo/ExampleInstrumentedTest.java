@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 
-// 添加构建  提交后构建 33  运行流水线 ， 提交运行流水线
+// 添加构建  提交后构建 33  运行流水线 ， 提交运行流水线 测试提交与验证条件
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
