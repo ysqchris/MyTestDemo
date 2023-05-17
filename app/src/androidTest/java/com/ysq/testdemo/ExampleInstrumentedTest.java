@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 
-// 添加构建  提交后构建，再次提交
+// 添加构建  提交后构建，再次提交 测试新建合并请求
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
