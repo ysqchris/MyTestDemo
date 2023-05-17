@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 
-// 添加构建  提交后构建 替提交代码 测试验证条件
+// 测试合并
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
