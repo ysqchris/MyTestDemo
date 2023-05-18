@@ -19,7 +19,7 @@ import java.util.Date;
 public class TimeTest {
 
     /**
-     * 日期类 1. Date
+     * 日期类 1. Date 测试
      */
     public  void  testDate(){
         Date date1=new Date();    //获取当前日期
