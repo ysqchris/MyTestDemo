@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
  */
 @RunWith(AndroidJUnit4.class)
 
-// 测试合并
+// 测试合并 朴道客户
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
