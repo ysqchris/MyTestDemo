@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 ext {
     config = [
-            //app、sdk版本信息
+            //app、sdk版本信息 /更新分支
             compileSdkVersion          : 29,
             minSdkVersion              : 17,
             targetSdkVersion           : 29,
